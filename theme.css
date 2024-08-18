@@ -16,13 +16,13 @@
 	--accent-hue: 210;
 	--accent-saturation: 33%;
 	--accent-lightness: 76%;
-	--accent-opacity: 0.65; /* Increased opacity by 30% */
+	--accent-opacity: 0.575; /* Increased opacity by 15% */
 	--accent-text-color: #000;
 
-	--sidebar-color: rgba(0,0,0,0.325); /* Increased opacity by 30% */
-	--main-content-color: rgba(0,0,0,0.325); /* Increased opacity by 30% */
+	--sidebar-color: rgba(0,0,0,0.2875); /* Increased opacity by 15% */
+	--main-content-color: rgba(0,0,0,0.2875); /* Increased opacity by 15% */
 
-	--message-color: rgba(0,0,0,0.3); /* Increased opacity by 30% */
+	--message-color: rgba(0,0,0,0.115); /* Increased opacity by 15% */
 	--message-radius: 10px;
 	--message-padding-top: 0px;
 	--message-padding-side: 6px;
@@ -30,18 +30,18 @@
 	--reply-hue: 0;
 	--reply-saturation: 0%;
 	--reply-lightness: 50%;
-	--reply-opacity: 0.325; /* Increased opacity by 30% */
-	--mention-opacity: 0.325; /* Increased opacity by 30% */
+	--reply-opacity: 0.2875; /* Increased opacity by 15% */
+	--mention-opacity: 0.2875; /* Increased opacity by 15% */
 
 	--textarea-color: 255,255,255;
-	--textarea-alpha: 0.13; /* Increased opacity by 30% */
-	--textarea-alpha-focus: 0.195; /* Increased opacity by 30% */
+	--textarea-alpha: 0.115; /* Increased opacity by 15% */
+	--textarea-alpha-focus: 0.1725; /* Increased opacity by 15% */
 	--textarea-text-color: #fff;
 	--textarea-radius: 15px;
 
-	--card-color: rgba(0,0,0,0.52); /* Increased opacity by 30% */
-	--card-color-hover: rgba(0,0,0,0.65); /* Increased opacity by 30% */
-	--card-color-select: rgba(0,0,0,0.91); /* Increased opacity by 30% */
+	--card-color: rgba(0,0,0,0.46); /* Increased opacity by 15% */
+	--card-color-hover: rgba(0,0,0,0.575); /* Increased opacity by 15% */
+	--card-color-select: rgba(0,0,0,0.805); /* Increased opacity by 15% */
 	
 	--button-height: 32px;
 	--button-padding: 0 16px;
@@ -53,18 +53,22 @@
 	--interactive-active: #fff;
 	--interactive-muted: #777;
 
-	--background-modifier-hover: rgba(255,255,255,0.0975); /* Increased opacity by 30% */
-	--background-modifier-selected: rgba(255,255,255,0.1625); /* Increased opacity by 30% */
-	--font-primary: "DejaVu Sans Mono", monospace !important; /* Changed to DejaVu Sans Mono */
-	--font-display: "DejaVu Sans Mono", monospace !important; /* Changed to DejaVu Sans Mono */
+	--background-modifier-hover: rgba(255,255,255,0.08625); /* Increased opacity by 15% */
+	--background-modifier-selected: rgba(255,255,255,0.14375); /* Increased opacity by 15% */
+	--font-primary: "DejaVu Sans Mono", monospace !important;
+	--font-display: "DejaVu Sans Mono", monospace !important;
 
-	--popout-color: rgba(0,0,0,0.975); /* Increased opacity by 30% */
+	--popout-color: rgba(0,0,0,0.8625); /* Increased opacity by 15% */
 	--popout-blur: 5px;
-	--popout-radius: 10px; /* Rounded corners applied */
+	--popout-radius: 10px;
+
+	--header-bg-color: rgba(0, 0, 0, 0.85); /* Opaque header bar */
 }
+
 .homeIcon-r0w4ny {
     display: none;
 }
+
 .tutorialContainer-1pL9QS .wrapper-3kah-n .childWrapper-1j_1ub:before {
     position: absolute;
     content: " ";
@@ -74,11 +78,13 @@
     background-size: contain;
     border-radius: 40%;
 }
+
 .reaction-3vwAF2, .reaction-102jx9 {
-  background-color: rgba(0,0,0,0.26); /* Increased opacity by 30% */
+  background-color: rgba(0,0,0,0.23); /* Increased opacity by 15% */
   border-radius: var(--message-radius);
   border: none;
 }
+
 .wrapper-30-Nkg:not(.groupStart-3Mlgv1), .wrapper-30-Nkg.compact-2Nkcau {
     margin-top: 0;
 }
@@ -90,12 +96,14 @@
 .attachment-1PZZB2,
 [class*=theme-] .tile-2mmK5T,
 [class*=theme-] .tile-2mmK5T:hover {
-    background-color:rgba(39, 39, 39, 0.52); /* Increased opacity by 30% */
+    background-color:rgba(39, 39, 39, 0.46); /* Increased opacity by 15% */
     border-radius: 10px; /* Rounded corners applied */
 }
+
 .mentioned-Tre-dv {
-    --message-color: hsla(var(--mention-hsl),0.26); /* Increased opacity by 30% */
+    --message-color: hsla(var(--mention-hsl),0.23); /* Increased opacity by 15% */
 }
+
 .mentioned-Tre-dv,
 .replying-eZ7p5z {
     border-radius: 10px; /* Rounded corners applied */
@@ -105,6 +113,7 @@
 .replying-eZ7p5z:before {
     display: block;
 }
+
 .wrapper__09ecc {
   margin-left: 0;
   margin-right: 0;
@@ -143,6 +152,37 @@
 .repliedMessage_e2bf4a .replyAvatar_cea07c {
   margin-left: 0;
 }
+
 .giftCodeContainer__7fa01 {
-	opacity: 1.04; /* Increased opacity by 30% */
+	opacity: 0.92; /* Increased opacity by 15% */
+}
+
+/* Make the header bar draggable */
+.container-1GIyF5 {
+    -webkit-app-region: drag;
+    background-color: var(--header-bg-color) !important; /* Ensure the header is opaque */
+    padding: 0 10px; /* Adjust padding if necessary */
+}
+
+/* Scaling adjustment */
+.container-1YxwTf .name-3DtTgJ,
+.sidebar-2K8pFh .name-3Uvkvr,
+.title-3qD0b-,
+.modal-3Crloo .title-3qD0b-,
+.popout-3sVMXz,
+.membersWrap-3NUR2t .member-3-YXUe,
+.guildsWrapper-5TJh6A {
+    font-size: 13px !important; /* Decrease font size for more content visibility */
+}
+
+.container-1GIyF5 {
+    height: 24px; /* Adjust header height if needed */
+}
+
+/* Prevent Discord from disappearing (attempt to fix display issues) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 1 !important; /* Ensure that opacity never causes it to disappear */
 }
